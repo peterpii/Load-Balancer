@@ -11,6 +11,7 @@
 
 ## Steps to create multiple docker containers and see load balance in Round Robin algorithm
 * npm install
+* change layer7_http.conf to nginx.conf in /usr/local/etc/nginx/
 * docker build -t nodeapp .
 * docker run -d -p 1111:9999 -e APPID=1111 nodeapp (first container/server)
 * docker run -d -p 2222:9999 -e APPID=2222 nodeapp (second container/server)
