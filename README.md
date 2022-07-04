@@ -38,6 +38,14 @@
 ## Setup for Web Socket server
 1. cd/websocket
 2. npm install
+3. node index.js 1111 & node index.js 2222 & node index.js 3333 & node index.js 4444
+4. Open a new terminal
+5. nginx -c PATH to tcp.cfg (i.e. nginx -c /Users/Peter/webSocket/tcp.cfg)
+6. Go to browser development mode -> console
+  * let ws = new WebSocket("ws://localhost");
+  * ws.onmessage = e => console.log(e.data)
+  * ws.send("some data");
+7. Should always go to the same server until you create a new connection 
 
 Notes:
 * To start multiple servers with different port: node index.js 1111 & node index.js 2222
@@ -45,3 +53,7 @@ Notes:
   * ws://localhost/ -> websocket app
   * ws://localhost/blahblah -> websocket app
   * path doesn't matter (path is only for layer 7)
+* You can create a config file and pass it as a path to Nginx, like tcp.cfg
+  * nginx -c FILEPATH
+* To run node app as a background service
+  * nohup node index.js &
