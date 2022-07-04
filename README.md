@@ -59,7 +59,7 @@
 10. You can try changing the index.html from "ws://localhost/wsapp/" to "ws://localhost/wschat/"
 11. You should notice that /wsapp will switch between 1111 and 2222 servers, and /wschat will switch between 3333 and 4444 servers
 
-Notes:
+## Notes:
 * Layer 4 Proxying blindly tunnels everything to the Backend 
   * ws://localhost/ -> websocket app
   * ws://localhost/blahblah -> websocket app
