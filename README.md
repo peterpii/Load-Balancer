@@ -9,7 +9,7 @@
 * To reload Nginx Server: nginx -s reload
 * To stop Nginx Server: nginx -s stop
 
-## Setup for Load Balancer
+# Setup for Load Balancer
 ### Steps to create multiple docker containers and see load balance in Round Robin algorithm
 1. cd/loadBalancer 
 2. npm install
@@ -35,7 +35,7 @@
 5. Do the commands for a couple of times, you should be able to see it using layer 4 LB in round robin 
 
 
-## Setup for Web Socket server
+# Setup for Web Socket server
 ### For Layer 4 WebSocket Proxying
 1. cd/websocket
 2. npm install
