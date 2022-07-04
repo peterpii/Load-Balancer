@@ -43,9 +43,9 @@
 4. Open a new terminal
 5. nginx -c PATH to tcp.cfg (i.e. nginx -c /Users/Peter/webSocket/tcp.cfg)
 6. Go to browser development mode -> console
-  * let ws = new WebSocket("ws://localhost");
-  * ws.onmessage = e => console.log(e.data)
-  * ws.send("some data");
+   * let ws = new WebSocket("ws://localhost");
+   * ws.onmessage = e => console.log(e.data)
+   * ws.send("some data");
 7. Should always go to the same server until you create a new connection 
 
 ### For Layer 7 WebSocket Proxying
