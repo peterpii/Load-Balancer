@@ -36,11 +36,13 @@
 
 
 ## Setup for Web Socket server
-### For Layer 4 WebSocket Proxying
+### To get started
 1. cd/websocket
 2. npm install
 3. node index.js 1111 & node index.js 2222 & node index.js 3333 & node index.js 4444
 4. Open a new terminal
+
+### For Layer 4 WebSocket Proxying
 5. nginx -c PATH to tcp.cfg (i.e. nginx -c /Users/Peter/webSocket/tcp.cfg)
 6. Go to browser development mode -> console
    * let ws = new WebSocket("ws://localhost");
@@ -49,10 +51,6 @@
 7. Should always go to the same server until you create a new connection 
 
 ### For Layer 7 WebSocket Proxying
-1. cd/websocket
-2. npm install
-3. node index.js 1111 & node index.js 2222 & node index.js 3333 & node index.js 4444
-4. Open a new terminal
 5. nginx -c PATH to ws.cfg (i.e. nginx -c /Users/Peter/webSocket/ws.cfg)
 6. Go to http://localhost
 7. Type anything into the input field and hit ENTER
