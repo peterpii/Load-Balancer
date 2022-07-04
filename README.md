@@ -41,3 +41,7 @@
 
 Notes:
 * To start multiple servers with different port: node index.js 1111 & node index.js 2222
+* Layer 4 Proxying blindly tunnels everything to the Backend 
+  * ws://localhost/ -> websocket app
+  * ws://localhost/blahblah -> websocket app
+  * path doesn't matter (path is only for layer 7)
